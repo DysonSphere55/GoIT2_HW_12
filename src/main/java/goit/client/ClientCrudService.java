@@ -1,6 +1,7 @@
 package goit.client;
 
 import goit.storage.hibernate.HibernateUtil;
+import goit.ticket.Ticket;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.hibernate.query.NativeQuery;
@@ -43,4 +44,6 @@ public class ClientCrudService {
                     Client.class).list();
         }
     }
+
+
 }

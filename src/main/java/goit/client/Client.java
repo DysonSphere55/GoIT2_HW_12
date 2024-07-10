@@ -1,7 +1,11 @@
 package goit.client;
 
+import goit.ticket.Ticket;
 import jakarta.persistence.*;
 import lombok.Data;
+
+import java.util.List;
+import java.util.Set;
 
 @Table(name = "client")
 @Entity
@@ -14,4 +18,7 @@ public class Client {
 
     @Column(name = "name")
     private String name;
+
+//    @OneToMany(mappedBy="client")
+//    private List<Ticket> tickets;
 }
